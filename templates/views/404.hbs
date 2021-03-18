@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headElement}}
+</head>
+
+<body>    
+    {{!-- navbar --}}
+
+    {{>navbar}}
+
+    <!-- main header -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!-- left div -->
+                    <div class="col-md-12 col-12 main_header_left align-items-center">
+                        <figure class="errImg">
+                            <img src="images/404.png" alt="">
+                        </figure>
+                        
+                        <p>Welcome to MONsoon weather app</p>
+                        <h1>{{errMsg}}</h1>
+                        <a href="/"><button>Go Back</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    {{!-- footer code --}}
+    {{>footer}}
+
+    {{!-- scripts --}}
+    {{>scripts}}
+</body>
+
+</html>

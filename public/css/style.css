@@ -1,0 +1,266 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+:root{
+    --main-bg: rgb(32, 45, 61);
+    --main-color: rgb(96, 126, 197);
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main_menu{
+    background-color: var(--main-bg);
+}
+.navbar{
+    color: #fff;
+    background-color: var(--main-bg);
+}
+.navbar a{
+    color: #fff;
+    font-size: 1.8rem;
+}
+.navbar a:hover{
+    color: var(--main-color)
+}
+.navbar li{
+    margin-left: 2rem;
+}
+.navbar-toggler-icon{
+    /* background-color: rgb(143, 140, 140); */
+    color: rgb(250, 250, 250);
+}
+.fa-cloudversify{
+    font-size: 22px;
+    transition: all linear;
+    color:  rgb(162, 163, 173);
+}
+
+.main_header_left{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main_header_left p{
+    font-size: 2rem;
+}
+.main_header_left h1{
+    font-size: 2.4rem;
+    margin: 1rem 0 4rem 0;
+}
+.main_header_left .text-color{
+    color: var(--main-color);
+}
+.main_header_left button{
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+    outline: none;
+}
+.main_header_left button:hover{
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+.main_header_right{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-item img{
+    max-height: 500px;
+    width: 80px;
+    padding: 2rem 0;
+}
+.align-items-center{
+    text-align: center;
+}
+.errImg{
+    width: 60rem;
+    height: 30rem;
+}
+.main_header_right figure{
+    filter: drop-shadow(0 0.5rem 1rem rgba(0,0,0,3));
+}
+.temp_form{
+    width: 80%;
+    position: relative;
+    margin: 10rem auto 6rem;
+}
+.temp_form input[type="text"]{
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    background: rgb(48, 47, 47);
+    color: #fff;
+    outline: none;
+    border:none;
+    font-size: 1.5rem;
+    border-radius: 3rem;
+}
+.temp_form input[type="submit"]{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border:none;
+    background-color: rgb(78, 167, 240);
+    padding: 0 3rem;
+    border-radius: 3rem;
+    color: #fff;
+    font-size: 1.3rem;
+}
+.temp_form input[type="submit"]:hover{
+    color: rgb(78, 167, 240);
+    background-color: #fff;
+}
+::placeholder{
+    color: rgb(202, 200, 200);
+}
+.tempInfo{
+    width: 40rem;
+    margin: auto;
+    min-height: 20rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(68, 66, 66);
+}
+.TopLayer{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(121, 121, 122);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    flex-wrap: wrap;
+}
+.TopLayer p{
+    color: #fff;
+    font-weight: 300;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+.main_Layer{
+    max-width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.main_Layer #city_name{
+    padding: 2rem 0;
+    color: rgb(231, 229, 229);
+    font-weight: 300;
+    font-size: 2rem;
+}
+.main_Layer .midLayer{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    flex-wrap: wrap;
+}
+.main_Layer .midLayer p, .main_Layer .midLayer .fa-cloud{
+    font-size: 5rem;
+    font-weight: 600;
+    color: #fff;
+}
+.fa{
+    color: rgb(38, 100, 192)
+}
+sup{
+    font-size: 6rem;
+    margin-top: -2rem;
+}
+.data_hide{
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+footer{
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+}
+footer p{
+    margin: 0;
+    text-align: right;
+    color: #fff;
+    line-height: 5rem;
+    font-size: 1.4rem;
+    margin-right: 1.5rem;
+    /* color: yellow */
+}
+footer p a{
+    text-decoration: none;
+    color: rgb(53, 140, 199);
+
+}
+footer p a:hover{
+    text-decoration: underline;
+    color: rgb(99, 176, 228);
+
+}
+.fa-cloud-rain{
+    height: 100px;
+}
+.fa-sun{
+    color: yellow;
+}
+.fa-cloud, .fa-cloud-rain{
+    animation: cloud 3s linear infinite alternate;
+}
+.fa-cloudversify{
+    animation: cloudversify 2s linear infinite alternate;
+}
+
+@keyframes cloud{
+    from {
+      transform: translateX(-4rem);
+    }
+
+    to {
+      transform: translateX(4rem);
+    }
+  }
+
+
+@keyframes cloudversify {
+    from {
+      transform: translateX(-0.5rem);
+    }
+
+    to {
+      transform: translateX(0.5rem);
+    }
+  }
+
+  /* responsive code */
+
+@media(max-width:768px){
+    .main_header_left{
+        height: auto;
+        margin: 5rem 0;
+    }
+    .main_header_right {
+        height: auto;
+        margin-top: 3rem;
+    }
+    .temp_form{
+        width: 90%;
+    }
+}
+
+

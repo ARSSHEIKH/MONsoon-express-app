@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headElement}}
+</head>
+
+<body>    
+    {{!-- navbar --}}
+
+    {{>navbar}}
+
+    <!-- main header -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!-- left div -->
+                    <div class="col-md-6 col-12 main_header_right">
+                        <figure>
+                            <img src="images/about.png" alt="">
+                        </figure>
+                    </div>
+                    <!-- right div -->
+                    <div class="col-md-6 col-12 main_header_left">
+                        <p>Welcome to weather app</p>
+                        <h1>I am <span class="text-color">Full-Stack Web Developer</span> and DevOps Engineer</h1>
+                        <a href="http://portfolio.arsalansheikh.surge.sh/" target="author"><button>Check now</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    {{!-- footer code --}}
+    {{>footer}}
+
+    {{!-- scripts --}}
+    {{>scripts}}
+</body>
+
+</html>
