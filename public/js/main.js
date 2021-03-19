@@ -48,8 +48,7 @@ const getInfo = async(event) =>{
     else{
         try{
         city_name.innerText = "Loading"
-        let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&APPID=ad82a3c85c4ef5b206dde323a545d999`
-        // ${process.env.WEATHER_API}
+        let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&APPID=${WEATHER_API}`
         
         const res = await fetch(apiUrl)
         const data = await res.json()
@@ -82,3 +81,4 @@ const getInfo = async(event) =>{
 
 }
 btnSearch.addEventListener("click", getInfo)
+// git commit -m "created global variable for apikey"
