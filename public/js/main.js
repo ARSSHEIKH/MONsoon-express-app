@@ -81,4 +81,3 @@ const getInfo = async(event) =>{
 
 }
 btnSearch.addEventListener("click", getInfo)
-// git commit -m "created global variable for apikey"
